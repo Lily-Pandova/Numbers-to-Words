@@ -13,7 +13,6 @@
         var numString = number.toString();
 
         if (number == 0){
-
             output = 'zero';
             text.value = output;
         }
@@ -26,8 +25,8 @@
             text.value = output;
         }
         else {
-            var devidedTens = number % 100;
-            output = (ones[Math.floor(number/100)] + " " + hundred + " " + (tens[Math.floor(devidedTens / 10)]) + " " + ones[number % 10]  );
+            var devidedHundred = number % 100;
+            output = (ones[Math.floor(number/100)] + " " + hundred + " " + (tens[Math.floor(devidedHundred/10)]) + " " + ones[number % 10]  );
             text.value = output;
         }
 
